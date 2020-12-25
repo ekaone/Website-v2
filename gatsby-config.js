@@ -29,8 +29,8 @@ module.exports = {
             slug: `/about`,
           },
           {
-            title: `Pranala`,
-            slug: `/pranala`,
+            title: `Tags`,
+            slug: `/tags`,
           },
         ],
         externalLinks: [
