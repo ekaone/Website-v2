@@ -1,0 +1,28 @@
+---
+title: Slug in Object
+date: 2020-06-01
+description: Read slugs inside object
+tags:
+  - Javascript
+---
+
+Modern blogs usually use `slug` as the identity of data, here is an example of reading `slug` from an object.
+
+```js
+const posts = {
+  "mountain-view": {
+    name: "Everest",
+    height: 8848,
+  },
+  "building-world": {
+    name: "Burj Khalifa",
+    height: 828,
+  },
+};
+
+const slugs = Object.entries(posts).map(([slug, { name, height }]) => {
+  return slug;
+});
+
+console.log(slugs); // [ 'mountain-view', 'building-world' ]
+```

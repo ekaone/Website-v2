@@ -1,0 +1,40 @@
+---
+title: Find Even numbers
+date: 2020-07-05
+description: How to find Even numbers inside array
+tags:
+  - Javascript
+---
+
+You have an array `1 - 10`.
+
+```js
+const elements = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+```
+
+Let's create `isEven` function.
+
+```js
+function isEven(element) {
+  return element % 2 === 0;
+}
+```
+
+Use `filter` to find even numbers, reach documentation 🚀 [filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter).
+
+```js
+elements.filter(isEven);
+```
+
+As complete codes.
+
+```js
+function isEven(element) {
+  return element % 2 === 0;
+}
+
+const elements = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+console.log(elements.filter(isEven));
+// output [2, 4, 6, 8, 10]
+```

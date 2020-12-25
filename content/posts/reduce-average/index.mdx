@@ -1,0 +1,16 @@
+---
+title: Average with reduce()
+date: 2020-04-28
+tags:
+  - Javascript
+---
+
+If you would like looking for average, you can try `reduce()`.
+
+```js
+const average = (...args) => {
+  return args.reduce((acc, el) => acc + el, 0) / args.length;
+};
+
+console.log(average(1, 2, 3, 4)); // 2.5
+```

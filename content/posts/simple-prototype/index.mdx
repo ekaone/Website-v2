@@ -1,0 +1,69 @@
+---
+title: Simple Prototype
+date: 2020-05-02
+description: Properties and Methods from prototype
+tags:
+  - Javascript
+---
+
+All `Javascript Object` inherit properties and methods from prototype.
+
+Create `Object Constructor`
+
+```js
+function Foo(params1) {
+  this.params1 = params1;
+}
+```
+
+Call property with new instance
+
+```js
+const instance = new Foo("Params 1");
+console.log(instance.params1);
+// ---- output: Params 1
+```
+
+We can not add new property to existing `Object Constructor`
+
+```js
+Foo.newProperty = "This is new Property";
+console.log(instance.newProperty);
+// ---- output: undefined
+```
+
+And last we can add new property to `Object Constructor`
+
+```js
+Foo.prototype.bar = "This is new Bar";
+console.log(instance.bar);
+// ---- output: This is new Bar
+```
+
+For complete codes
+
+```js
+function Foo(params1) {
+  this.params1 = params1;
+}
+
+/**
+ * Create new instance as representative of Foo
+ * all Foo's stuff will be inherits to new instance
+ */
+const instance = new Foo("Params 1");
+
+// take property default
+console.log(instance.params1);
+// ---- output: Params 1
+
+// can not add new property
+Foo.newProperty = "This is new Property";
+console.log(instance.newProperty);
+// ---- output: undefined
+
+// add new property
+Foo.prototype.bar = "This is new Bar";
+console.log(instance.bar);
+// ---- output: This is new Bar
+```

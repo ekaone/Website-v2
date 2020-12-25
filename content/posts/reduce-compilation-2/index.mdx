@@ -1,0 +1,52 @@
+---
+title: Compilation reduce() - Part 2
+date: 2020-05-01
+tags:
+  - Javascript
+---
+
+List of compilation using reduce() function
+
+```js
+const numbers = [1, 2, 3, 4];
+
+const r1 = numbers.reduce(
+  (previousValue, currentValue) => previousValue + currentValue
+);
+console.log(r1);
+// 10
+
+const r2 = numbers.reduce(
+  (previousValue, currentValue) => previousValue * currentValue
+);
+console.log(r2);
+// 24
+
+const r3 = numbers.reduce((previousValue, currentValue) => {
+  previousValue.push(currentValue * 2);
+  return previousValue;
+}, []);
+console.log(r3);
+// [ 2, 4, 6, 8 ]
+
+const r4 = numbers.reduce((previousValue, currentValue) => {
+  if (currentValue > 2) previousValue.push(currentValue);
+  return previousValue;
+}, []);
+console.log(r4);
+// [ 3, 4 ]
+
+const r5 = numbers.reduce((total, amount) => {
+  if (amount % 2 === 0) total.push(amount);
+  return total;
+}, []);
+console.log(r5);
+// [ 2, 4 ]
+
+const r6 = numbers.reduce((total, amount) => {
+  if (amount % 2 === 1) total.push(amount);
+  return total;
+}, []);
+console.log(r6);
+// [1, 3 ]
+```

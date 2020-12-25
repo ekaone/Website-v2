@@ -1,0 +1,29 @@
+---
+title: Find index in Elements
+date: 2020-07-06
+description: Get index position in an array
+tags:
+  - Javascript
+---
+
+Use `indexOf` function to get index in an array.
+
+```js
+const cities = ["jakarta", "texas", "tokyo"];
+
+const index = cities.indexOf("tokyo");
+
+//index is `2`
+```
+
+You may use findIndex for an Objects array.
+
+```js
+const cities = [{ city: "jakarta" }, { city: "texas" }, { city: "tokyo" }];
+
+const index = cities.findIndex((el, index) => {
+  if (el.city === "texas") return true;
+});
+
+console.log(index); // index is 1
+```

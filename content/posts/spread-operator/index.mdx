@@ -1,0 +1,31 @@
+---
+title: Spread Operator
+date: 2020-04-30
+description: Merge with Spread Operator
+tags:
+  - Javascript
+---
+
+Merge with Spread Operator more easy.
+Take a `note`, if the objects contains same property, the right-post will overwrite.
+
+```js
+const user1 = {
+  name: "John",
+  age: 40,
+  admin: true,
+};
+
+const user2 = {
+  name: "Dow",
+  age: 35,
+};
+
+const merged = {
+  ...user1,
+  ...user2,
+};
+
+console.log(merged);
+// { name: 'Dow', age: 35, admin: true }
+```

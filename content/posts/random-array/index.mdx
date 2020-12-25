@@ -1,0 +1,20 @@
+---
+title: Array shuffle
+date: 2020-06-02
+description: Random array
+tags:
+  - Javascript
+---
+
+How to shuffle the Array, the following example uses `sort`.
+
+```js
+let list = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+list = list.sort(() => Math.random() - 0.5);
+
+console.log(list);
+// 1st [ 1, 9, 7, 8, 4, 2, 3, 5, 6 ]
+// 2nd [ 7, 8, 4, 3, 6, 9, 5, 2, 1 ]
+```
+
+🚀 more details [Array.sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)

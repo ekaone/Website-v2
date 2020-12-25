@@ -1,0 +1,39 @@
+---
+title: React JS handler onChange
+date: 2020-05-05
+description: No more repetitive handler onChange
+tags:
+  - Javascript
+---
+
+Without repetitive handler onChange function, this approach can be one of solutions
+
+```jsx
+import React, { useState } from "react";
+
+const Navbar = (props) => {
+  return <input type="text" onChange={props.handlerChange("searchForm1")} />;
+};
+
+const View = (props) => {
+  return <pre>{JSON.stringify(props.view, null, 2)}</pre>;
+};
+
+export default function App() {
+  const [search, setSearch] = useState({
+    searchForm1: "",
+    searchForm2: "",
+  });
+
+  const handleChange = (name) => (event) => {
+    setSearch({ ...search, [name]: event.target.value });
+  };
+
+  return (
+    <>
+      <Navbar handlerChange={handleChange} />
+      <View view={search} />
+    </>
+  );
+}
+```
