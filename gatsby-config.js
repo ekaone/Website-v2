@@ -50,7 +50,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Eka's website`,
-        short_name: `eka-website`,
+        short_name: `Eka-Website`,
         description: `Personal website and blog frontend development Javascript and React.`,
         start_url: `/`,
         background_color: `#fff`,
@@ -58,18 +58,8 @@ module.exports = {
         display: `standalone`,
         icons: [
           {
-            src: `/android-chrome-192x192.png`,
-            sizes: `192x192`,
-            type: `image/png`,
-          },
-          {
             src: `/android-chrome-256x256.png`,
             sizes: `256x256`,
-            type: `image/png`,
-          },
-          {
-            src: `/android-chrome-512x512.png`,
-            sizes: `512x512`,
             type: `image/png`,
           },
         ],

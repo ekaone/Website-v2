@@ -9,9 +9,7 @@ tags:
 
 There are many ways how to solve the problem, compare `fibonacci` calculation with Big O notation
 
-Time complexity: `O(2^N)`
-
-```
+```js:title=time-complexity-O(2^N)
 function fibonacci(num) {
   if (num <= 1) {
     return 1;
@@ -21,23 +19,24 @@ function fibonacci(num) {
 }
 ```
 
-Time complexity: `O(N)`
+<br />
 
-```
+```js:title=time-complexity-O(N)
 function fibonacci(num) {
-  var a = 1,
-    b = 0,
-    temp;
+var a = 1,
+b = 0,
+temp;
 
-  while (num >= 0) {
-    temp = a;
-    a = a + b;
-    b = temp;
-    num--;
-  }
-
-  return b;
+while (num >= 0) {
+temp = a;
+a = a + b;
+b = temp;
+num--;
 }
+
+return b;
+}
+
 ```
 
 💁‍♀️ take a note that `while` loop more faster than `recursive`.
