@@ -2,9 +2,25 @@
   "private": true,
   "name": "eka-website",
   "description": "Personal website and blog frontend development Javascript and React.",
-  "version": "1.3.9",
-  "author": "Eka Prasetia <ekaone3033@gmail.com>",
-  "license": "0BSD",
+  "version": "1.0.0",
+  "keywords": [
+    "eka",
+    "prasetia",
+    "website",
+    "blog",
+    "javascript",
+    "react"
+  ],
+  "author": {
+    "name": "Eka Prasetia",
+    "email": "ekaone3033@gmail.com",
+    "url": "https://ekaprasetia.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ekaone/Website-v2.git"
+  },
   "starter-name": "gatsby-starter-minimal-blog",
   "scripts": {
     "build": "gatsby build",

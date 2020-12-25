@@ -1,0 +1,31 @@
+---
+title: Add item in Array
+description: How to add item to an array
+date: 2020-08-08
+tags:
+  - Javascript
+---
+
+Given an elements array.
+
+```js
+const elements = [1, 2, 3];
+```
+
+We can use spread-operator to add an item.
+
+```js
+[0, ...elements];
+// output [0, 1, 2, 3]
+```
+
+Or use `splice` method.
+
+```js
+elements.splice(3, 0, 4);
+
+console.log(elements);
+// output [1, 2, 3, 4]
+```
+
+Details 🚀 [splice() method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice).

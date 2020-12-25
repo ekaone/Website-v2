@@ -1,0 +1,33 @@
+---
+title: Check Key exist
+description: Simple way how to check key in Object
+date: 2020-06-03
+tags:
+  - Javascript
+---
+
+At first you have an Object.
+
+```js
+const color = {
+  red: "#FF0000",
+};
+```
+
+You may use `in` and conditional function.
+
+```js
+"red" in color;
+
+// with conditional
+if ("red" in color) {
+  // do something
+}
+```
+
+Or another way, use `hasOwnProperty()`.
+
+```js
+// with hasOwnProperty
+color.hasOwnProperty("red");
+```

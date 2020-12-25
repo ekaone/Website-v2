@@ -1,0 +1,23 @@
+---
+title: Express send JSON
+description: You can write simply response JSON with Express JS
+date: 2020-05-12
+tags:
+  - Javascript
+  - Express
+---
+
+After you have setup connection with route in Express app, the callback function will call
+Request object instance and Reponse object intance as below:
+
+```js
+app.get("/", (req, res) => res.send("Hello Express"));
+```
+
+And you can directly send `JSON` to the client by using simple code as follow
+
+```js
+app.get("/", (req, res) => res.json({ name: "Hello", message: "Express" }));
+```
+
+🚀 more details for [Express stuff](https://expressjs.com/)
