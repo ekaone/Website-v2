@@ -43,6 +43,8 @@ module.exports = {
             url: `https://github.com/ekaone`,
           },
         ],
+        feed: true,
+        feedTitle: "Eka's website",
       },
     },
     `gatsby-plugin-sitemap`,
