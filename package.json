@@ -38,7 +38,7 @@
     "gatsby-plugin-manifest": "^2.5.2",
     "gatsby-plugin-netlify": "^2.4.0",
     "gatsby-plugin-offline": "^3.3.3",
-    "gatsby-plugin-sitemap": "^2.5.1",
+    "gatsby-plugin-sitemap": "^2.9.0",
     "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.13",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
